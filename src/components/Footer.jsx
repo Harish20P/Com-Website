@@ -1,10 +1,11 @@
+// Footer.jsx
 import React, { useState, useEffect } from "react";
 import "../components/Footer.css";
 import logo1 from "../Images/Logo1.png";
 
 const Footer = () => {
   const [itemsCount, setItemsCount] = useState(5);
-  const [isVisible, setIsVisible] = useState(true);
+  const [scrollState, setScrollState] = useState("top"); // "top", "hiding", "hidden"
 
   useEffect(() => {
     const updateItemsCount = () => {
@@ -16,8 +17,16 @@ const Footer = () => {
     };
 
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      setIsVisible(currentScrollY === 0);
+      const scrollY = window.scrollY;
+      const threshold = 50; // Adjust this threshold as needed
+      
+      if (scrollY <= 0) {
+        setScrollState("top");
+      } else if (scrollY > 0 && scrollY <= threshold) {
+        setScrollState("hiding");
+      } else {
+        setScrollState("hidden");
+      }
     };
 
     updateItemsCount();
@@ -31,7 +40,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className={`footer ${!isVisible ? 'hidden' : ''}`}>
+    <footer className={`footer footer-${scrollState}`}>
       <div className="footer-content">
         {[...Array(itemsCount)].map((_, index) => (
           <div key={index} className="footer-item">
