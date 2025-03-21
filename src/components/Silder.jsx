@@ -48,7 +48,7 @@ const Slider = () => {
     <div className='slider-container'>
         <div className="container">
             <div className="hero-section">
-                <div className="content-section">
+                <div className="content-section content-section-first">
                 <div>
                     <h1 className="heading">WE ARE YOUR PARTNERS IN PROGRESS</h1>
                 </div>

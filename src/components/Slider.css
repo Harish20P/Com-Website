@@ -20,6 +20,10 @@
     gap: 40px;
 }
 
+.content-section-first{
+    margin-top: 10vh;
+}
+
 .heading {
     font-size: 48px;
     font-weight: 700;
