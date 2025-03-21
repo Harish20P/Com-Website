@@ -62,6 +62,16 @@ const Slider = () => {
                 </div>
                 
                 <div className="image-container" ref={imageContainerRef}>
+                    <div className="grid-container">
+                        <div className="grid visible"></div>
+                        <div className="grid hidden"></div>
+                        <div className="grid visible"></div>
+                        <div className="grid hidden "></div>
+                        <div className="grid hidden"></div>
+                        <div className="grid visible third"></div>
+                        <div className="grid hidden"></div>
+                        <div className="grid visible"></div>
+                    </div>
                 <img 
                     src="src/Images/image.png" 
                     alt="Abstract sculpture with cloud-like textures in blue and gold tones" 
