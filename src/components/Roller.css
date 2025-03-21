@@ -1,0 +1,13 @@
+
+.roller-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: white;
+    padding: 0;
+  }
+  
+  canvas {
+    background-color: transparent;
+  }  

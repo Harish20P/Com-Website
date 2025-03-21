@@ -1,0 +1,227 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "THREE.GLTFExporter"
+  },
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "nodes": [
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1.077922077922078,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        22.499999999999886,
+        74.49567823627234,
+        -89.49999999999999,
+        1
+      ],
+      "name": "Icosahedron",
+      "mesh": 0
+    },
+    {
+      "matrix": [
+        -2.220446049250313e-16,
+        0,
+        1,
+        0,
+        6.123233995736765e-17,
+        1,
+        1.232595164407831e-32,
+        0,
+        -1,
+        6.123233995736765e-17,
+        -2.220446049250313e-16,
+        0,
+        -1000.0000000000005,
+        2.8860601540059973e-13,
+        -1.1052057801186016e-12,
+        1
+      ],
+      "name": "Personal Camera",
+      "camera": 0
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "name": "Default Ambient Light"
+    },
+    {
+      "name": "Scene 1",
+      "children": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 720,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 720,
+      "byteLength": 720,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1440,
+      "byteLength": 480,
+      "target": 34962,
+      "byteStride": 8
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1920,
+      "uri": "data:application/octet-stream;base64,p6lUwwAAAADLbgNDAAAAAMtuA0OnqVRDy24Dw6epVEMAAAAAAAAAAMtuA0OnqVRDy24DQ6epVEMAAAAAy24Dw6epVEMAAAAAy24DQ6epVEMAAAAAAAAAAMtuA0OnqVTDy24Dw6epVEMAAAAAAAAAAMtuA0OnqVTDp6lUwwAAAADLbgPDy24Dw6epVEMAAAAAp6lUwwAAAADLbgPDp6lUwwAAAADLbgNDy24Dw6epVEMAAAAAAAAAAMtuA0OnqVRDp6lUQwAAAADLbgNDy24DQ6epVEMAAAAAp6lUwwAAAADLbgNDAAAAAMtuA8OnqVRDAAAAAMtuA0OnqVRDp6lUwwAAAADLbgPDy24Dw6epVMMAAAAAp6lUwwAAAADLbgNDAAAAAMtuA0OnqVTDAAAAAMtuA8OnqVTDp6lUwwAAAADLbgPDy24DQ6epVEMAAAAAp6lUQwAAAADLbgPDAAAAAMtuA0OnqVTDp6lUQwAAAADLbgNDAAAAAMtuA8OnqVRDy24DQ6epVMMAAAAAAAAAAMtuA8OnqVRDy24Dw6epVMMAAAAAy24DQ6epVMMAAAAAy24Dw6epVMMAAAAAAAAAAMtuA8OnqVTDy24DQ6epVMMAAAAAAAAAAMtuA8OnqVTDp6lUQwAAAADLbgPDy24DQ6epVMMAAAAAp6lUQwAAAADLbgPDp6lUQwAAAADLbgNDy24DQ6epVMMAAAAAp6lUQwAAAADLbgNDAAAAAMtuA0OnqVRDAAAAAMtuA8OnqVRDAAAAAMtuA8OnqVRDp6lUwwAAAADLbgNDy24Dw6epVMMAAAAAy24Dw6epVMMAAAAAp6lUwwAAAADLbgPDAAAAAMtuA8OnqVTDAAAAAMtuA8OnqVTDAAAAAMtuA0OnqVTDp6lUQwAAAADLbgPDp6lUQwAAAADLbgPDy24DQ6epVEMAAAAAp6lUQwAAAADLbgNDOs0TvzrNEz86zRM/Os0TvzrNEz86zRM/Os0TvzrNEz86zRM/AAAAAOwlbz9isbY+AAAAAOwlbz9isbY+AAAAAOwlbz9isbY+AAAAAOwlbz9isba+AAAAAOwlbz9isba+AAAAAOwlbz9isba+Os0TvzrNEz86zRO/Os0TvzrNEz86zRO/Os0TvzrNEz86zRO/7CVvv2Kxtj4AAAAA7CVvv2Kxtj4AAAAA7CVvv2Kxtj4AAAAAOs0TPzrNEz86zRM/Os0TPzrNEz86zRM/Os0TPzrNEz86zRM/YrG2vgAAAADsJW8/YrG2vgAAAADsJW8/YrG2vgAAAADsJW8/7CVvv2Kxtr4AAAAA7CVvv2Kxtr4AAAAA7CVvv2Kxtr4AAAAAYrG2vgAAAADsJW+/YrG2vgAAAADsJW+/YrG2vgAAAADsJW+/Os0TPzrNEz86zRO/Os0TPzrNEz86zRO/Os0TPzrNEz86zRO/Os0TPzrNE786zRM/Os0TPzrNE786zRM/Os0TPzrNE786zRM/AAAAAOwlb79isbY+AAAAAOwlb79isbY+AAAAAOwlb79isbY+AAAAAOwlb79isba+AAAAAOwlb79isba+AAAAAOwlb79isba+Os0TPzrNE786zRO/Os0TPzrNE786zRO/Os0TPzrNE786zRO/7CVvP2Kxtr4AAAAA7CVvP2Kxtr4AAAAA7CVvP2Kxtr4AAAAAYrG2PgAAAADsJW8/YrG2PgAAAADsJW8/YrG2PgAAAADsJW8/Os0TvzrNE786zRM/Os0TvzrNE786zRM/Os0TvzrNE786zRM/Os0TvzrNE786zRO/Os0TvzrNE786zRO/Os0TvzrNE786zRO/YrG2PgAAAADsJW+/YrG2PgAAAADsJW+/YrG2PgAAAADsJW+/7CVvP2Kxtj4AAAAA7CVvP2Kxtj4AAAAA7CVvP2Kxtj4AAAAA/Y0WPwAAAD8AAEA/+xstPwAAAD8F5FI/AABAP/sbLT8AAIA/BeRSPwAAAD8F5FI/AAAAAAXkUj8AAIA++xstPwAAAD8F5FI/AACAPvsbLT8F5NI+AAAAPwAAAD8F5FI/BeTSPgAAAD/9jRY/AAAAPwAAAD8F5FI/AABAP/sbLT8Dcmk/AAAAPwAAgD8F5FI//Y0WPwAAAD8AAEA/CsilPgAAQD/7Gy0/BeTSPgAAAD8AAAA/7G80Pv2NFj8AAAA/AACAPvsbLT8AAIA+CsilPgXk0j4AAAA/AAAAAAXkUj/sb7Q9AAAAPwAAgD77Gy0/A3JpPwAAAD8AAEA/CsilPgAAgD/sbzQ+AABAPwrIpT4AAAA/7G80PgAAgD/sbzQ+AAAAP+xvND4AAIA+CsilPgAAAADsbzQ+AACAPgrIpT7sb7Q9AAAAPwAAAADsbzQ+/0aLPwAAAD8Dcmk/AAAAPwAAgD/sbzQ+A3JpPwAAAD8AAEA/+xstPwAAQD8KyKU+AABAPwrIpT79jRY/AAAAPwAAAD/sbzQ+AAAAP+xvND4F5NI+AAAAPwAAgD4KyKU+AACAPgrIpT4AAIA++xstP+xvtD0AAAA//0aLPwAAAD8AAIA/BeRSPwNyaT8AAAA/"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 60,
+      "max": [
+        212.66270446777344,
+        212.66270446777344,
+        212.66270446777344
+      ],
+      "min": [
+        -212.66270446777344,
+        -212.66270446777344,
+        -212.66270446777344
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 60,
+      "max": [
+        0.9341723918914795,
+        0.9341723918914795,
+        0.9341723918914795
+      ],
+      "min": [
+        -0.9341723918914795,
+        -0.9341723918914795,
+        -0.9341723918914795
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 60,
+      "max": [
+        1.0881041288375854,
+        0.8237918019294739
+      ],
+      "min": [
+        0,
+        0.17620819807052612
+      ],
+      "type": "VEC2"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extras": {
+            "parameters": {
+              "width": 500,
+              "detail": 0,
+              "corner": 0,
+              "cornerSides": 4,
+              "height": 500,
+              "depth": 500,
+              "type": "IcosahedronGeometry"
+            },
+            "type": "IcosahedronGeometry"
+          }
+        }
+      ]
+    }
+  ],
+  "cameras": [
+    {
+      "type": "orthographic",
+      "orthographic": {
+        "xmag": 9.6,
+        "ymag": 4.765,
+        "zfar": 100000,
+        "znear": 0
+      },
+      "name": "Camera"
+    }
+  ]
+}

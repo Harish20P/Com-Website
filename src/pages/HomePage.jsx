@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from '../components/Header';
-import './HomePage.css';
+import Slider from '../components/silder';
 import Footer from '../components/Footer';
+import './HomePage.css';
+import Roller from '../components/Roller';
 
 const HomePage = () => {
   return (
@@ -10,9 +12,11 @@ const HomePage = () => {
       <main className="main-content">
         <h1>Welcome to RhodNet</h1>
       </main>
+      <Slider />
+      <Roller />
       <Footer />
     </div>
   );
 };
 
-export default HomePage; 
+export default HomePage;
