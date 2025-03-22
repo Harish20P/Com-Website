@@ -103,18 +103,6 @@ const Slider = () => {
                     </p>
                 </div>
                 </div>
-                <div className="content-section">
-                <div>
-                    <h1 className="heading">WE ARE YOUR PARTNERS IN PROGRESS</h1>
-                </div>
-                <div>
-                    <p className="description">
-                    We build data systems and AI solutions that understand your industry's unique challenges. 
-                    By combining technical expertise with a deep appreciation for your specific context, 
-                    we create technology that gives you advantages competitors struggle to match.
-                    </p>
-                </div>
-                </div>
             </div>
             </div>
     </div>
