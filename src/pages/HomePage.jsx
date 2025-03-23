@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import './HomePage.css';
 import Roller from '../components/Roller';
 import Service from '../components/Service';
+import WhyChoose from '../components/WhyChoose';
 
 const HomePage = () => {
   const [stars, setStars] = useState([]);
@@ -170,57 +171,60 @@ const HomePage = () => {
   }, [manualStars, nearbyStar]);
 
   return (
-    <div className="home-page">
-      <Header />
-      <main className="main-content">
-        <div className="starfield" ref={starfieldRef}>
-          {stars.map(star => (
-            <div
-              key={star.id}
-              className="star"
-              style={{
-                left: `${star.x}%`,
-                top: `${star.y}%`,
-                width: `${star.size}px`,
-                height: `${star.size}px`,
-                backgroundColor: star.color,
-                opacity: star.opacity,
-                animationDuration: `${star.twinkleSpeed}s`,
-              }}
-            />
-          ))}
-          {manualStars.map(star => (
-            <div
-              key={star.id}
-              className={`star manual-star ${pausedStarsRef.current[star.id] ? 'paused' : ''}`}
-              style={{
-                left: `${star.x}%`,
-                top: `${star.y}%`,
-                width: `${star.size}px`,
-                height: `${star.size}px`,
-                backgroundColor: star.color,
-                opacity: star.opacity,
-                animationDuration: `${star.twinkleSpeed}s`,
-                animationPlayState: pausedStarsRef.current[star.id] ? 'paused' : 'running',
-                boxShadow: `0 0 15px 5px ${star.color}`,
-                transition: 'left 0.016s linear, top 0.016s linear',
-              }}
-            >
-              {nearbyStar === star.id && (
-                <div className="star-tooltip">{star.text}</div>
-              )}
-            </div>
-          ))}
-        </div>
-        <div className="center-star"></div>
-        <div className="content-wrapper">
-          <h1>Welcome to RhodNet</h1>
-        </div>
-      </main>
-      <Slider />
-      <Roller />
-      <Service />
-      <Footer />
+    <div>
+      <div className="home-page">
+        <Header />
+        <main className="main-content">
+          <div className="starfield" ref={starfieldRef}>
+            {stars.map(star => (
+              <div
+                key={star.id}
+                className="star"
+                style={{
+                  left: `${star.x}%`,
+                  top: `${star.y}%`,
+                  width: `${star.size}px`,
+                  height: `${star.size}px`,
+                  backgroundColor: star.color,
+                  opacity: star.opacity,
+                  animationDuration: `${star.twinkleSpeed}s`,
+                }}
+              />
+            ))}
+            {manualStars.map(star => (
+              <div
+                key={star.id}
+                className={`star manual-star ${pausedStarsRef.current[star.id] ? 'paused' : ''}`}
+                style={{
+                  left: `${star.x}%`,
+                  top: `${star.y}%`,
+                  width: `${star.size}px`,
+                  height: `${star.size}px`,
+                  backgroundColor: star.color,
+                  opacity: star.opacity,
+                  animationDuration: `${star.twinkleSpeed}s`,
+                  animationPlayState: pausedStarsRef.current[star.id] ? 'paused' : 'running',
+                  boxShadow: `0 0 15px 5px ${star.color}`,
+                  transition: 'left 0.016s linear, top 0.016s linear',
+                }}
+              >
+                {nearbyStar === star.id && (
+                  <div className="star-tooltip">{star.text}</div>
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="center-star"></div>
+          <div className="content-wrapper">
+            <h1>Welcome to RhodNet</h1>
+          </div>
+        </main>
+        <Slider />
+        <Roller />
+        <Service />
+        <Footer />
+      </div>
+      <WhyChoose />
     </div>
   );
 };
