@@ -1,0 +1,84 @@
+.mover-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    padding: 12px 0;
+    position: relative;
+  }
+  
+  .mover {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: moveLeftToRight 30s linear infinite;
+    will-change: transform; /* Optimize for animations */
+  }
+  
+  .mover-item {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Arial', sans-serif;
+    margin-right: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 8px;
+    transition: color 0.3s ease;
+  }
+  
+  .mover-item:hover {
+    color: #d2004d; /* Light blue highlight on hover */
+  }
+  
+  @keyframes moveLeftToRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .mover-item {
+      font-size: 1rem;
+      margin-right: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mover-item {
+      font-size: 0.9rem;
+      margin-right: 20px;
+    }
+    
+    .mover {
+      animation-duration: 20s; /* Faster on mobile */
+    }
+  }
+  
+  /* Add a gradient fade effect at the edges */
+  .mover-container::before,
+  .mover-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .mover-container::before {
+    left: 0;
+    background: linear-gradient(to right, #000, transparent);
+  }
+  
+  .mover-container::after {
+    right: 0;
+    background: linear-gradient(to left, #000, transparent);
+  }
+  
+  /* Optional class to pause on hover */
+  .pause-on-hover:hover .mover {
+    animation-play-state: paused;
+  }

@@ -33,7 +33,7 @@
 
 /* Enlarged title state */
 .service-title-enlarged {
-  transform: scale(1.8);
+  transform: scale(1.65);
   transition: transform 0.5s ease;
 }
 

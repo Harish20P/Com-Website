@@ -6,6 +6,8 @@ import './HomePage.css';
 import Roller from '../components/Roller';
 import Service from '../components/Service';
 import WhyChoose from '../components/WhyChoose';
+import Mover from '../components/Mover';
+import ContactForm from '../components/ContactForm';
 
 const HomePage = () => {
   const [stars, setStars] = useState([]);
@@ -225,6 +227,8 @@ const HomePage = () => {
         <Footer />
       </div>
       <WhyChoose />
+      <Mover />
+      <ContactForm />
     </div>
   );
 };
